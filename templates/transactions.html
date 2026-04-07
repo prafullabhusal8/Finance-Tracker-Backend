@@ -1,0 +1,13 @@
+
+<h2>Transactions</h2>
+<table border='1'>
+<tr><th>Amount</th><th>Type</th><th>Category</th><th>Date</th></tr>
+{% for t in transactions %}
+<tr>
+<td>{{t.amount}}</td>
+<td>{{t.type}}</td>
+<td>{{t.category}}</td>
+<td>{{t.date}}</td>
+</tr>
+{% endfor %}
+</table>

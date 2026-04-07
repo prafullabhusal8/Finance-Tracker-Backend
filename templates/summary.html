@@ -1,0 +1,8 @@
+<h2>Summary</h2>
+
+<p><b>Total Income:</b> ₹ {{ summary.total_income }}</p>
+<p><b>Total Expense:</b> ₹ {{ summary.total_expense }}</p>
+
+<h3 style="color: {{ 'green' if summary.balance >= 0 else 'red' }}">
+    Balance: ₹ {{ summary.balance }}
+</h3>

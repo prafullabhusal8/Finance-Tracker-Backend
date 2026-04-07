@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Transaction</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 50px;
+        }
+        input, select {
+            margin: 10px;
+            padding: 8px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: green;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Add Transaction</h2>
+
+<form method="POST">
+    Amount: <input type="number" name="amount" required><br>
+
+    Type:
+    <select name="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+    </select><br>
+
+    Category: <input type="text" name="category" required><br>
+
+    Date: <input type="date" name="date" required><br>
+
+    <button type="submit">Add</button>
+</form>
+
+</body>
+</html>
+
